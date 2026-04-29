@@ -13,15 +13,15 @@
   :root {
     --cream:      #FDF6ED;
     --cream-dark: #F5EBDA;
-    --terra:      #01c117;
-    --terra-lt:   #01c117;
+    --terra:      #18aa01;
+    --terra-lt:   #1cbc03;
     --terra-dk:   #00b9e7;
     --sage:       #7A9E7E;
     --sage-lt:    #C4DBC6;
     --sage-dk:    #4A7050;
-    --yellow:     #0dc923;
-    --yellow-lt:  #7BD88A;
-    --blue:       #2B9FD4;
+    --yellow:     #1cbc03;
+    --yellow-lt:  #24e307;
+    --blue:       #2b99d5;
     --blue-lt:    #D6F0FB;
     --brown:      #3D2B1F;
     --pink:       #E8A5A0;
@@ -53,7 +53,7 @@
   .nav-inner {
     max-width: 1200px; margin: 0 auto;
     display: flex; align-items: center; justify-content: space-between;
-    height: 72px;
+    height: 100px;
   }
   .logo {
     display: flex; flex-direction: column; align-items: center;
@@ -96,15 +96,12 @@
 
   /* ── HERO ────────────────────────────────────────────── */
   .hero {
-    position: relative; min-height: 90vh;
+    position: relative;
     display: flex; align-items: center; overflow: hidden;
     padding: 4rem 2rem 6rem;
   }
   .hero-bg {
     position: absolute; inset: 0; z-index: 0;
-    background: radial-gradient(ellipse 80% 70% at 70% 40%, var(--sage-lt) 0%, transparent 60%),
-                radial-gradient(ellipse 60% 50% at 20% 80%, var(--yellow-lt) 0%, transparent 55%),
-                var(--cream);
   }
 
   /* floating shapes */
@@ -401,7 +398,7 @@
   .cta-inner h2 em { font-style: normal; color: var(--yellow); }
   .cta-inner p { font-size: 1.05rem; opacity: .75; margin-bottom: 2rem; line-height: 1.6; }
   .btn-light {
-    background: var(--yellow); color: var(--brown);
+    background: var(--yellow); color: white;
     box-shadow: 0 4px 0 rgba(0,0,0,.2);
     font-size: 1.1rem; padding: .9rem 2.5rem;
   }
@@ -508,6 +505,36 @@
       content: "";
       flex: 0 0 .5rem;
     }
+
+    .cards-grid {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: .25rem .5rem 1rem;
+    margin: 2rem -0.5rem 0;
+    }
+
+    .cards-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    .cards-grid {
+        scrollbar-width: none;
+    }
+
+    .nav-card {
+        flex: 0 0 85%;
+        scroll-snap-align: center;
+        margin: 0;
+    }
+    .cards-grid::after {
+        content: "";
+        flex: 0 0 .5rem;
+    }
+
     .footer-inner { grid-template-columns: 1fr; }
     .footer-bottom { flex-direction: column; gap: .75rem; text-align: center; }
   }
@@ -523,10 +550,7 @@
 <nav>
   <div class="nav-inner">
   <a href="#" class="logo" aria-label="Little Scholars Islamic Montessori Home" style="display: flex; flex-direction: column; align-items: center; text-decoration: none;">
-      <img src="LSMlogo.png" alt="Little Scholars Islamic Montessori Logo" style="width:140px; height:47px;">
-      <div class="logo-text">
-         <span>Islamic Montessori Preschool</span>
-      </div>
+      <img src="LSMlogo.png" alt="Little Scholars Islamic Montessori Logo" style="width:206px; height:88.7px;">
   </a>      
     </a>
     <ul class="nav-links">
