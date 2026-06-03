@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Programs — Little Scholars Islamic Montessori</title>
+<title>Privacy Policy — Little Scholars Islamic Montessori</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
 <style>
+
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
@@ -57,23 +58,6 @@
     display: flex; flex-direction: column; align-items: center;
     text-decoration: none; color: var(--brown);
   }
-  .logo-text {
-    font-family: var(--font-display);
-    font-size: 1.25rem;
-    font-weight: 800;
-    line-height: 1.1;
-  }
-  .logo-text span {
-    display: block;
-    min-width: 236.09px;
-    font-size: .7rem;
-    font-weight: bold;
-    letter-spacing: .1em;
-    color: var(--sage-dk);
-    text-transform: uppercase;
-    font-family: Arial;
-    text-align: center;
-  }
 
   .nav-links { display: flex; align-items: center; gap: .25rem; list-style: none; }
   .nav-links a {
@@ -111,7 +95,7 @@
 
   .hero {
     position: relative;
-    padding: 5rem 2rem 2rem;
+    padding: 5rem 2rem 4rem;
     overflow: hidden;
   }
   .float-shape {
@@ -173,33 +157,19 @@
     box-shadow: 0 8px 0 rgba(61,43,31,.08);
     position: relative;
   }
-  .hero-illustration {
+  .hero-card-inner, .hero-illustration {
     background: linear-gradient(180deg, #dff5ff 0%, #fdf6ed 100%);
     border-radius: 24px;
-    padding: 1rem;
+    padding: 1.5rem;
     border: 3px dashed var(--blue);
   }
-  .hero-note {
-    position: absolute;
-    right: -14px;
-    bottom: -18px;
-    background: var(--blue);
-    color: #fff;
-    border-radius: 50%;
-    width: 110px; height: 110px;
-    display: flex; align-items: center; justify-content: center;
-    text-align: center; font-family: var(--font-display); font-weight: 800;
-    box-shadow: 4px 4px 0 rgba(0,0,0,.12);
-    line-height: 1.1;
-    padding: .65rem;
-  }
+  .hero-card h3 { font-size: 1.45rem; margin-bottom: .75rem; }
+  .hero-card p { color: #6B5040; line-height: 1.65; font-size: .96rem; }
 
   .wave-divider { display: block; width: 100%; overflow: hidden; line-height: 0; }
   .wave-divider svg { display: block; width: 100%; }
 
-  .section {
-    padding: 3rem 2rem;
-  }
+  .section { padding: 3rem 2rem; }
   .section.alt { background: var(--cream-dark); }
   .container { max-width: 1200px; margin: 0 auto; }
   .section-label {
@@ -212,17 +182,7 @@
     line-height: 1.15;
     margin-bottom: .85rem;
   }
-  .section-sub {
-    color: #8A6A55;
-    line-height: 1.7;
-    font-size: 1rem;
-  }
-
-  .story-grid,
-  .founder-grid,
-  .promise-grid {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;
-  }
+  .section-sub { color: #8A6A55; line-height: 1.7; font-size: 1rem; }
 
   .panel {
     background: #fff;
@@ -232,6 +192,12 @@
   }
   .panel p { line-height: 1.8; color: #6B5040; margin-bottom: 1rem; }
   .panel p:last-child { margin-bottom: 0; }
+
+  .story-grid,
+  .founder-grid,
+  .promise-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start;
+  }
 
   .play-card-grid {
     display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 2rem;
@@ -251,26 +217,6 @@
   .play-icon { font-size: 2rem; margin-bottom: .7rem; }
   .play-card h3 { font-size: 1.15rem; margin-bottom: .45rem; }
   .play-card p { color: #8A6A55; line-height: 1.65; font-size: .94rem; }
-
-  .blob-stack {
-    position: relative; min-height: 430px;
-  }
-  .blob {
-    position: absolute; border-radius: 32px; padding: 1.4rem;
-    box-shadow: 0 6px 0 rgba(61,43,31,.08);
-  }
-  .blob.one {
-    background: #fff; width: 74%; top: 0; left: 0;
-    border: 3px dashed var(--terra);
-  }
-  .blob.two {
-    background: var(--blue-lt); width: 62%; right: 0; top: 120px;
-  }
-  .blob.three {
-    background: #fff7d9; width: 68%; left: 10%; bottom: 0;
-  }
-  .blob h3 { margin-bottom: .35rem; font-size: 1.1rem; }
-  .blob p { color: #6B5040; line-height: 1.65; font-size: .94rem; }
 
   .timeline-strip {
     margin-top: 2rem;
@@ -295,40 +241,6 @@
   }
   .timeline-card p { color: #8A6A55; line-height: 1.55; font-size: .92rem; }
 
-  .founder-photo {
-    background: linear-gradient(180deg, #fff 0%, #f7efe1 100%);
-    border-radius: 30px;
-    padding: 1.5rem;
-    box-shadow: 0 7px 0 rgba(61,43,31,.07);
-    position: relative;
-  }
-  .portrait-box {
-    border-radius: 24px;
-    min-height: 420px;
-    background: linear-gradient(180deg, #d7f0fb 0%, #ffffff 100%);
-    border: 3px dashed var(--blue);
-    display: flex; align-items: center; justify-content: center;
-    padding: 1.25rem;
-  }
-  .portrait-caption {
-    margin-top: 1rem;
-    background: var(--yellow-lt);
-    border-radius: 18px;
-    padding: .95rem 1rem;
-    font-size: .95rem;
-    line-height: 1.6;
-    color: #4e3a29;
-  }
-
-  .value-pill {
-    background: #fff;
-    border-radius: 999px;
-    padding: .65rem 1rem;
-    font-family: var(--font-display);
-    font-weight: 700;
-    box-shadow: 0 4px 0 rgba(61,43,31,.07);
-  }
-
   .promise-grid { margin-top: 2rem; }
   .promise-box {
     border-radius: 26px;
@@ -351,18 +263,10 @@
   .cta-banner::before { width: 380px; height: 380px; top: -150px; right: -80px; }
   .cta-banner::after { width: 260px; height: 260px; bottom: -90px; left: -40px; }
   .cta-inner { max-width: 760px; margin: 0 auto; text-align: center; position: relative; z-index: 1; }
-  .cta-inner h2 {
-    font-size: clamp(2rem, 4vw, 2.9rem);
-    line-height: 1.12;
-    margin-bottom: .9rem;
-  }
+  .cta-inner h2 { font-size: clamp(2rem, 4vw, 2.9rem); line-height: 1.12; margin-bottom: .9rem; }
   .cta-inner h2 em { font-style: normal; color: var(--yellow); }
   .cta-inner p { font-size: 1.05rem; line-height: 1.7; opacity: .9; margin-bottom: 1.9rem; }
-  .btn-light {
-    background: var(--yellow); color: white;
-    box-shadow: 0 4px 0 rgba(0,0,0,.2);
-    font-size: 1.05rem; padding: .9rem 2.3rem;
-  }
+  .btn-light { background: var(--yellow); color: white; box-shadow: 0 4px 0 rgba(0,0,0,.2); font-size: 1.05rem; padding: .9rem 2.3rem; }
   .btn-light:hover { transform: translateY(-2px); box-shadow: 0 6px 0 rgba(0,0,0,.25); }
 
   footer {
@@ -391,6 +295,41 @@
   .reveal { opacity: 0; transform: translateY(28px); transition: opacity .6s ease, transform .6s ease; }
   .reveal.visible { opacity: 1; transform: none; }
 
+  .policy-layout { display: grid; grid-template-columns: 280px 1fr; gap: 2rem; align-items: start; }
+  .toc-card { position: sticky; top: 125px; background: #fff; border-radius: 24px; padding: 1.4rem; box-shadow: 0 5px 0 rgba(61,43,31,.07); border: 2px dashed var(--sage-lt); }
+  .toc-card h3 { font-size: 1.15rem; margin-bottom: .8rem; }
+  .toc-card a { display: block; color: #6B5040; text-decoration: none; font-family: var(--font-display); font-weight: 700; padding: .35rem .2rem; }
+  .toc-card a:hover { color: var(--terra); }
+  .policy-stack { display: grid; gap: 1.15rem; }
+  .policy-card { background: #fff; border-radius: 24px; padding: 1.55rem; box-shadow: 0 5px 0 rgba(61,43,31,.07); border-left: 6px solid var(--terra); }
+  .policy-card:nth-child(2n) { border-left-color: var(--blue); }
+  .policy-card:nth-child(3n) { border-left-color: var(--yellow); }
+  .policy-card h3 { font-size: 1.35rem; margin-bottom: .6rem; }
+  .policy-card p, .policy-card li { color: #6B5040; line-height: 1.75; }
+  .policy-card ul { padding-left: 1.2rem; margin-top: .6rem; }
+  .small-note { font-size: .92rem; color: #8A6A55; line-height: 1.6; margin-top: .75rem; }
+
+  .faq-layout { display: grid; grid-template-columns: .95fr 1.05fr; gap: 2rem; align-items: start; }
+  .faq-list { display: grid; gap: 1rem; }
+  details.faq-item { background: #fff; border-radius: 22px; box-shadow: 0 5px 0 rgba(61,43,31,.07); border: 2px solid transparent; overflow: hidden; }
+  details.faq-item:nth-child(1) { border-color: var(--terra-lt); }
+  details.faq-item:nth-child(2) { border-color: var(--blue); }
+  details.faq-item:nth-child(3) { border-color: var(--sage-lt); }
+  details.faq-item:nth-child(4) { border-color: var(--yellow-lt); }
+  details.faq-item:nth-child(5) { border-color: var(--pink-lt); }
+  details.faq-item:nth-child(6) { border-color: var(--lav-lt); }
+  details.faq-item:nth-child(7) { border-color: var(--terra-lt); }
+  details.faq-item:nth-child(8) { border-color: var(--blue); }
+  .faq-item summary { list-style: none; cursor: pointer; padding: 1.2rem 1.35rem; font-family: var(--font-display); font-weight: 800; font-size: 1.08rem; display: flex; justify-content: space-between; gap: 1rem; align-items: center; }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after { content: '+'; width: 30px; height: 30px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; background: var(--blue-lt); color: var(--blue); font-family: var(--font-display); font-weight: 800; flex: 0 0 auto; }
+  .faq-item[open] summary::after { content: '–'; background: var(--terra); color: #fff; }
+  .faq-item p { padding: 0 1.35rem 1.25rem; color: #6B5040; line-height: 1.75; }
+  .faq-side-card { background: #fff; border-radius: 28px; padding: 1.7rem; box-shadow: 0 6px 0 rgba(61,43,31,.07); }
+  .faq-side-card-inner { background: linear-gradient(180deg, #dff5ff 0%, #fdf6ed 100%); border-radius: 22px; padding: 1.4rem; border: 3px dashed var(--blue); }
+  .faq-side-card h3 { margin-bottom: .6rem; }
+  .faq-side-card p { color: #6B5040; line-height: 1.7; }
+
   @media (max-width: 960px) {
     .nav-inner { position: relative; justify-content: center; }
     .logo { position: absolute; left: 50%; transform: translateX(-50%); }
@@ -399,48 +338,24 @@
     .hero-inner,
     .story-grid,
     .founder-grid,
-    .promise-grid { grid-template-columns: 1fr; }
+    .promise-grid,
+    .policy-layout,
+    .faq-layout { grid-template-columns: 1fr; }
     .play-card-grid { grid-template-columns: 1fr 1fr; }
     .timeline-strip { grid-template-columns: 1fr 1fr; }
     .footer-inner { grid-template-columns: 1fr 1fr; gap: 2rem; }
     .hero-card { max-width: 500px; margin: 0 auto; }
     .hero { padding-top: 4rem; }
-    .hero-inner {
-      grid-template-columns: 1fr;
-      text-align: center;
-    }
+    .hero-inner { text-align: center; }
+    .hero-sub { margin-left: auto; margin-right: auto; }
+    .hero-actions { justify-content: center; }
+    .toc-card { position: static; }
   }
 
   @media (max-width: 640px) {
-    .play-card-grid {
-        display: flex;
-        gap: 1rem;
-        overflow-x: auto;
-        overflow-y: hidden;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        padding: .25rem .5rem 1rem;
-        margin: 2rem -0.5rem 0;
-    }
-
-    .play-card-grid::-webkit-scrollbar {
-        display: none;
-    }
-
-    .play-card-grid {
-        scrollbar-width: none;
-    }
-
-    .play-card {
-        flex: 0 0 85%;
-        scroll-snap-align: center;
-        margin: 0;
-    }
-    .play-card-grid::after {
-        content: "";
-        flex: 0 0 .5rem;
-    }
-    .timeline-strip {
+    .hero { padding: 4rem 1.25rem 3.5rem; }
+    .section { padding: 4rem 1.25rem; }
+    .play-card-grid, .timeline-strip {
         display: flex;
         gap: 1rem;
         overflow-x: auto;
@@ -451,32 +366,17 @@
         margin: 2rem -0.5rem 0;
         scrollbar-width: none;
     }
-    .timeline-strip::-webkit-scrollbar {
-        display: none;
-    }
-    .timeline-card {
-        flex: 0 0 85%;
-        scroll-snap-align: center;
-        margin: 0;
-    }
-    .timeline-strip::after {
-        content: "";
-        flex: 0 0 .5rem;
-    }
+    .play-card-grid::-webkit-scrollbar, .timeline-strip::-webkit-scrollbar { display: none; }
+    .play-card, .timeline-card { flex: 0 0 85%; scroll-snap-align: center; margin: 0; }
+    .play-card-grid::after, .timeline-strip::after { content: ""; flex: 0 0 .5rem; }
     .footer-inner { grid-template-columns: 1fr; }
     .hero-actions { flex-direction: column; align-items: stretch; }
     .btn { justify-content: center; }
-    .blob-stack { min-height: auto; display: grid; gap: 1rem; }
-    .blob { position: static; width: 100% !important; }
-    .hero-note {
-      position: static; width: auto; height: auto; border-radius: 18px; margin-top: 1rem;
-      padding: .9rem 1rem;
-    }
+    .hero-card { display: none; }
     .footer-bottom { flex-direction: column; text-align: center; }
-    .hero-card {
-      display: none;
-    }
+    .policy-card, .panel, .faq-side-card { padding: 1.25rem; }
   }
+
 </style>
 </head>
 <body>
@@ -489,7 +389,7 @@
     <ul class="nav-links">
       <li><a href="littlescholars.html">Home</a></li>
       <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="programs.html" class="active">Programs</a></li>
+      <li><a href="programs.html">Programs</a></li>
       <li><a href="littlescholars.html#daily-life">Daily Life</a></li>
       <li><a href="littlescholars.html#gallery">Gallery</a></li>
       <li><a href="enrollment.html" class="nav-cta">Enroll Now</a></li>
@@ -503,14 +403,14 @@
 <nav class="mobile-menu" id="mobile-menu">
   <a href="littlescholars.html">Home</a>
   <a href="aboutus.html">About Us</a>
-  <a href="programs.html" class="active">Programs</a>
+  <a href="programs.html">Programs</a>
   <a href="littlescholars.html#daily-life">Daily Life</a>
   <a href="littlescholars.html#gallery">Gallery</a>
-  <a href="enrollment.html" style="max-width: 155px;border-radius: 150px;text-align: center;alignment-baseline: middle;" class="nav-cta">Enroll Now</a>
+  <a href="enrollment.html" style="max-width:155px;border-radius:150px;text-align:center;" class="nav-cta">Enroll Now</a>
 </nav>
 
-<section class="hero" id="programs-hero">
-  <div class="hero-bg"></div>
+
+<section class="hero" id="privacy-hero">
   <div class="float-shape fs1"></div>
   <div class="float-shape fs2"></div>
   <div class="float-shape fs3"></div>
@@ -518,27 +418,19 @@
 
   <div class="hero-inner">
     <div class="hero-text reveal">
-      <h1>
-        Gentle Care,<br>
-        Joyful Learning,<br>
-        <span class="accent">Strong Islamic Roots</span>
-      </h1>
+      <h1>Privacy Policy for<br><span class="accent">Our School Community</span></h1>
       <p class="hero-sub">
-        Our programs are thoughtfully designed for each stage of early childhood, helping children grow with confidence, independence, adab, curiosity, and love for Allah.
+        At Little Scholars Islamic Montessori, we value the trust families place in us. This page explains how information submitted through our website may be collected, used, and protected.
       </p>
     </div>
 
     <div class="hero-card reveal">
-      <div class="hero-illustration" style="min-height:340px; display:flex; align-items:center; justify-content:center; text-align:center;">
-        <div>
-          <div style="font-size:5rem; line-height:1;">🧸📚🌿</div>
-          <h3 style="font-size:1.6rem; margin:.75rem 0 .45rem;">A prepared environment for every age</h3>
-          <p style="color:#6B5040; line-height:1.65;">
-            From nurturing infancy and toddler care to a rich early childhood Montessori experience, children are guided with warmth, structure, and purpose.
-          </p>
-        </div>
+      <div class="hero-card-inner">
+        <h3>Last Updated</h3>
+        <p>
+          June 2, 2026. This policy is written for clear family communication and should be reviewed periodically as the website and enrollment process grow.
+        </p>
       </div>
-      <div class="hero-note">Ages<br>0–6</div>
     </div>
   </div>
 </section>
@@ -551,184 +443,87 @@
 
 <section class="section alt">
   <div class="container">
-    <div class="reveal" style="text-align:center; max-width:780px; margin:0 auto;">
-      <div class="section-label">🌼 Our Approach</div>
-      <h2 class="section-title">Programs that honor every stage of childhood</h2>
-      <p class="section-sub">
-        At Little Scholars Islamic Montessori, children are not rushed through childhood. Each program is created to support the child’s natural development through hands-on Montessori work, Islamic values, caring routines, and meaningful relationships.
-      </p>
-    </div>
+    <div class="policy-layout">
+      <aside class="toc-card reveal">
+        <h3>🌿 On This Page</h3>
+        <a href="#overview">Overview</a>
+        <a href="#information">Information We Collect</a>
+        <a href="#use">How We Use Information</a>
+        <a href="#sharing">Sharing Information</a>
+        <a href="#children">Children’s Information</a>
+        <a href="#security">Security</a>
+        <a href="#contact-policy">Contact</a>
+      </aside>
 
-    <div class="play-card-grid">
-      <div class="play-card reveal">
-        <div class="play-icon">🕌</div>
-        <h3>Islamic values</h3>
-        <p>Faith, gratitude, adab, kindness, and love for Allah are gently woven into the rhythm of the school day.</p>
-      </div>
-    <div class="play-card reveal">
-        <div class="play-icon">📖</div>
-        <h3>Hifth/Memorization</h3>
-        <p>Memorizing Quran is incorporated into every child's day, for all age groups. We focus on building an understanding of the Quran by explaining the stories and lessons on an interactive level tailored to each child and age group.</p>
-      </div>
-      <div class="play-card reveal">
-        <div class="play-icon">💛</div>
-        <h3>Nurturing guidance</h3>
-        <p>Teachers guide each child with patience, consistency, encouragement, and warm relationships.</p>
-      </div>
-    </div>
-  </div>
-</section>
+      <div class="policy-stack">
+        <article class="policy-card reveal" id="overview">
+          <h3>Overview</h3>
+          <p>
+            This Privacy Policy describes how Little Scholars Islamic Montessori LLC may collect and use information submitted through this website, including enrollment inquiries, callback requests, and general communication forms.
+          </p>
+          <p class="small-note">
+            This page is not a substitute for legal advice. A licensed attorney should review the final policy before public launch if you need legal compliance language for your exact operations.
+          </p>
+        </article>
 
-<div class="wave-divider" style="transform: scaleY(-1);">
-  <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-    <path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" fill="#F5EBDA"/>
-  </svg>
-</div>
+        <article class="policy-card reveal" id="information">
+          <h3>Information We May Collect</h3>
+          <p>
+            Families may voluntarily provide information when completing an enrollment inquiry or contacting the school.
+          </p>
+          <ul>
+            <li>Parent or guardian name, phone number, and email address</li>
+            <li>Child’s name, age, gender, program interest, and desired start date</li>
+            <li>Potty-training status, allergies, medical notes, developmental notes, and other family-provided details</li>
+            <li>Preferred days and times for a callback</li>
+            <li>Any additional comments or questions submitted by the family</li>
+          </ul>
+        </article>
 
-<section class="section" id="infant-toddler">
-  <div class="container">
-    <div class="story-grid">
-      <div class="blob-stack reveal" aria-hidden="true">
-        <div class="blob one">
-          <h3>👶 Loving Care</h3>
-          <p>Infants and toddlers are cared for with warmth, patience, safety, and close attention to their individual needs.</p>
-        </div>
-        <div class="blob two">
-          <h3>🚼 Movement & Exploration</h3>
-          <p>Children are given safe opportunities to crawl, walk, reach, carry, build, explore, and discover through movement.</p>
-        </div>
-        <div class="blob three">
-          <h3>🗣 Early Language</h3>
-          <p>Teachers use gentle conversation, naming, songs, stories, and repetition to support early communication.</p>
-        </div>
-      </div>
+        <article class="policy-card reveal" id="use">
+          <h3>How We Use Information</h3>
+          <p>
+            Information submitted through the website is used to review enrollment inquiries, determine whether a callback may be appropriate, communicate with families, answer questions, and support the admissions process.
+          </p>
+          <p>
+            We may also use contact information to follow up regarding tours, availability, program fit, rates, or next steps requested by the family.
+          </p>
+        </article>
 
-      <div class="panel reveal">
-        <div class="section-label">🧸 Infancy / Toddler Program</div>
-        <h2 class="section-title">Ages 0–3</h2>
-        <p>
-          Our Infancy and Toddler program provides a safe, loving, and peaceful environment for the youngest learners. At this age, children need consistent care, gentle routines, secure relationships, and room to explore the world around them.
-        </p>
-        <p>
-          The classroom supports early movement, language development, sensory exploration, social connection, cognitive development, and practical independence in age-appropriate ways. Toddlers are encouraged to participate in simple routines, read along, make small choices, and begin building confidence in their abilities.
-        </p>
-        <p>
-          Care is personal and nurturing. We understand that infants and toddlers are still developing trust, communication, emotional regulation, and independence, so our approach is patient, loving, and respectful.
-        </p>
-      </div>
-    </div>
+        <article class="policy-card reveal" id="sharing">
+          <h3>How Information Is Shared</h3>
+          <p>
+            Little Scholars Islamic Montessori does not sell family information. Information may be shared only when necessary to operate the school, respond to a family inquiry, comply with legal obligations, or protect the safety and well-being of children, families, staff, or the school community.
+          </p>
+        </article>
 
-    <div class="play-card-grid">
-      <div class="play-card reveal">
-        <div class="play-icon">🍼</div>
-        <h3>Responsive routines</h3>
-        <p>Daily care is guided by each child’s needs, comfort, rhythm, and developmental stage.</p>
-      </div>
-      <div class="play-card reveal">
-        <div class="play-icon">🧸</div>
-        <h3>Safe exploration</h3>
-        <p>Children explore materials, movement, sound, texture, and simple activities in a prepared environment.</p>
-      </div>
-      <div class="play-card reveal">
-        <div class="play-icon">🌙</div>
-        <h3>Peaceful environment</h3>
-        <p>A calm classroom atmosphere helps young children feel secure, loved, and ready to grow.</p>
-      </div>
-    </div>
-  </div>
-</section>
+        <article class="policy-card reveal" id="children">
+          <h3>Children’s Information</h3>
+          <p>
+            Information about children is treated with care and should only be submitted by a parent or legal guardian. Families should avoid submitting unnecessary sensitive information unless it is important for enrollment review, safety, health, or care planning.
+          </p>
+        </article>
 
-<div class="wave-divider">
-  <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-    <path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" fill="#F5EBDA"/>
-  </svg>
-</div>
+        <article class="policy-card reveal" id="security">
+          <h3>Security and Retention</h3>
+          <p>
+            We aim to handle family information responsibly and limit access to those who need it for school communication or enrollment review. No website or electronic transmission can be guaranteed completely secure, so families should contact us directly if they prefer not to submit certain details online.
+          </p>
+          <p>
+            Information may be retained as long as needed for enrollment review, school communication, recordkeeping, or legal and operational purposes.
+          </p>
+        </article>
 
-<section class="section alt" id="early-childhood">
-  <div class="container">
-    <div class="founder-grid">
-      <div class="panel reveal">
-        <div class="section-label">📚 Early Childhood Program</div>
-        <h2 class="section-title">Ages 3–6</h2>
-        <p>
-          Our Early Childhood program supports preschool and kindergarten-age children as they develop independence, concentration, confidence, language, early math thinking, social skills, and a love for learning.
-        </p>
-        <p>
-          Children are encouraged to choose meaningful work, care for their environment, practice responsibility, and build respectful relationships with teachers and classmates. The Montessori classroom gives children freedom within structure, allowing them to grow at their own pace while learning how to make thoughtful choices.
-        </p>
-        <p>
-          Islamic identity is part of the classroom culture. Children are supported in developing adab, gratitude, kindness, and an awareness of Allah through daily routines, reminders, stories, and gentle guidance.
-        </p>
-      </div>
-
-      <div class="blob-stack reveal" aria-hidden="true">
-        <div class="blob one">
-          <h3>🔤 Language & Communication</h3>
-          <p>Children strengthen vocabulary, early literacy, conversation skills, storytelling, and confidence in expression.</p>
-        </div>
-        <div class="blob two">
-          <h3>🔢 Math & Sensorial Work</h3>
-          <p>Hands-on materials help children understand order, quantity, patterns, comparison, and problem solving.</p>
-        </div>
-        <div class="blob three">
-          <h3>🤲 Practical Life & Adab</h3>
-          <p>Daily routines build independence, care of self, care of the environment, responsibility, patience, and respect.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="timeline-strip">
-      <div class="timeline-card reveal">
-        <div class="year">Independence</div>
-        <p>Children practice doing things for themselves, caring for classroom materials, and taking pride in their growth.</p>
-      </div>
-      <div class="timeline-card reveal">
-        <div class="year">Focus</div>
-        <p>Montessori work cycles help children build concentration, persistence, and confidence through repeated practice.</p>
-      </div>
-      <div class="timeline-card reveal">
-        <div class="year">Character</div>
-        <p>Children learn kindness, patience, sharing, responsibility, and respect through daily classroom life.</p>
-      </div>
-      <div class="timeline-card reveal">
-        <div class="year">Faith</div>
-        <p>Islamic manners, reminders, gratitude, and love for Allah are naturally included throughout the day.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="wave-divider" style="transform: scaleY(-1);">
-  <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-    <path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" fill="#F5EBDA"/>
-  </svg>
-</div>
-
-<section class="section">
-  <div class="container">
-    <div class="reveal" style="text-align:center; max-width:760px; margin:0 auto;">
-      <div class="section-label">🌟 Program Highlights</div>
-      <h2 class="section-title">What both programs share</h2>
-      <p class="section-sub">
-        Although each age group has different developmental needs, both programs are built on the same foundation of Islamic character, Montessori-inspired independence, and sincere care.
-      </p>
-    </div>
-
-    <div class="promise-grid">
-      <div class="promise-box green reveal">
-        <h3>Faith-centered growth</h3>
-        <p>
-          Children are surrounded by an environment that encourages Islamic manners, gratitude, kindness, responsibility, and love for Allah in a gentle and natural way.
-        </p>
-      </div>
-      <div class="promise-box blue reveal">
-        <h3>Developmentally appropriate care</h3>
-        <ul>
-          <li>Hands-on learning and sensory exploration</li>
-          <li>Respectful teacher guidance and warm relationships</li>
-          <li>Purposeful routines that build independence</li>
-          <li>Social, emotional, physical, spiritual, and academic support</li>
-        </ul>
+        <article class="policy-card reveal" id="contact-policy">
+          <h3>Questions or Updates</h3>
+          <p>
+            Families may contact us to ask questions about this policy, update submitted information, or request that we review information previously provided through the website.
+          </p>
+          <p>
+            Email: <a href="mailto:admin@littlescholarsmontessori.com" style="color:var(--terra); font-weight:700;">admin@littlescholarsmontessori.com</a><br>
+            Phone: <a href="tel:(201) 647-7229" style="color:var(--terra); font-weight:700;">(201) 647-7229</a>
+          </p>
+        </article>
       </div>
     </div>
   </div>
@@ -739,7 +534,11 @@
     <div class="footer-brand">
       <h4 style="font-size:1.1rem; display:flex; align-items:center; gap:8px;">🌱 Little Scholars Islamic Montessori</h4>
       <p>A nurturing Islamic Montessori community where children ages 6 months to 5 years discover the joy of learning.</p>
-      <p style="margin-top:.75rem;"><a href="https://maps.apple/p/JXh-8.R3nZn.m4">📍 Paramus, NJ 07652</a><a href="tel:(201) 647-7229"> 📞 (201) 647-7229</a><a href="mailto: admin@littlescholarsmontessori.com">✉️ admin@littlescholarsmontessori.com</a></p>
+      <p style="margin-top:.75rem;">
+        <a href="https://maps.apple/p/JXh-8.R3nZn.m4">📍 Paramus, NJ 07652</a>
+        <a href="tel:(201) 647-7229"> 📞 (201) 647-7229</a>
+        <a href="mailto:admin@littlescholarsmontessori.com">✉️ admin@littlescholarsmontessori.com</a>
+      </p>
     </div>
     <div>
       <h4>Quick Links</h4>
@@ -749,7 +548,6 @@
       <a href="littlescholars.html#daily-life">Daily Life</a>
       <a href="littlescholars.html#gallery">Gallery</a>
     </div>
-
     <div>
       <h4>Admissions</h4>
       <a href="enrollment.html">Enrollment Inquiry</a>
@@ -768,9 +566,11 @@
   </div>
 </footer>
 
+
 <script>
   const ham = document.getElementById('hamburger');
   const menu = document.getElementById('mobile-menu');
+
   ham.addEventListener('click', () => {
     menu.classList.toggle('open');
     const spans = ham.querySelectorAll('span');
@@ -802,5 +602,6 @@
   }, { threshold: 0.12 });
   reveals.forEach(el => observer.observe(el));
 </script>
+
 </body>
 </html>
