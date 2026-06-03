@@ -444,7 +444,7 @@
   .mobile-menu a:hover { background: var(--cream-dark); border-left-color: var(--terra); }
 
   /* ── RESPONSIVE ──────────────────────────────────────── */
-  @media (max-width: 900px) {
+  @media (max-width: 960px) {
         /* Center logo on mobile */
     .nav-inner {
       position: relative;
@@ -472,7 +472,7 @@
     .floating-badge { right: 12px; bottom: -12px; }
     .footer-inner { grid-template-columns: 1fr 1fr; gap: 2rem; }
   }
-  @media (max-width: 600px) {
+  @media (max-width: 640px) {
     .slider-shell {
       overflow: visible;
       margin: 0;
@@ -537,6 +537,12 @@
 
     .footer-inner { grid-template-columns: 1fr; }
     .footer-bottom { flex-direction: column; gap: .75rem; text-align: center; }
+    .cards-grid .reveal,
+    .timeline .reveal {
+      opacity: 1 !important;
+      transform: none !important;
+      transition: none !important;
+    }
   }
   .slider-controls { display: none; }
   /* ── SCROLL REVEAL ───────────────────────────────────── */
