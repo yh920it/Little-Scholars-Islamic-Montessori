@@ -85,7 +85,7 @@ body.page-home .hamburger span {
     border-radius: 2px;
     transition: all .3s;
     border-color: #00b9e7;
-    box-shadow: inset 0px -0.3px 20px #00b9e7, inset 0px -0.3px 20px #00b9e7, 0px -0.03px 24px #00b9e7, 0px -0.3px 1px #00b9e7;
+    box-shadow: inset 0px -0.3px 20px #399700, inset 0px -0.3px 20px #00b9e7, 0px -0.03px 24px #399700, 0px -0.3px 1px #00b9e7;
 }
 body.page-home .hero { position: relative;
     display: flex; align-items: center; overflow: hidden;
@@ -437,7 +437,7 @@ body.page-about .hamburger span {
     border-radius: 2px;
     transition: all .3s;
     border-color: #00b9e7;
-    box-shadow: inset 0px -0.3px 20px #00b9e7, inset 0px -0.3px 20px #00b9e7, 0px -0.03px 24px #00b9e7, 0px -0.3px 1px #00b9e7;
+    box-shadow: inset 0px -0.3px 20px #399700, inset 0px -0.3px 20px #00b9e7, 0px -0.03px 24px #399700, 0px -0.3px 1px #00b9e7;
 }
 body.page-about .mobile-menu { display: none; position: fixed; inset: 72px 0 0 0;
     background: var(--cream); z-index: 99; padding: 2rem;
@@ -763,7 +763,7 @@ body.page-programs .hamburger span {
     border-radius: 2px;
     transition: all .3s;
     border-color: #00b9e7;
-    box-shadow: inset 0px -0.3px 20px #00b9e7, inset 0px -0.3px 20px #00b9e7, 0px -0.03px 24px #00b9e7, 0px -0.3px 1px #00b9e7;
+    box-shadow: inset 0px -0.3px 20px #399700, inset 0px -0.3px 20px #00b9e7, 0px -0.03px 24px #399700, 0px -0.3px 1px #00b9e7;
 }
 body.page-programs .mobile-menu { display: none; position: fixed; inset: 72px 0 0 0;
     background: var(--cream); z-index: 99; padding: 2rem;
@@ -1083,7 +1083,7 @@ body.page-enrollment .hamburger span {
     border-radius: 2px;
     transition: all .3s;
     border-color: #00b9e7;
-    box-shadow: inset 0px -0.3px 20px #00b9e7, inset 0px -0.3px 20px #00b9e7, 0px -0.03px 24px #00b9e7, 0px -0.3px 1px #00b9e7;
+    box-shadow: inset 0px -0.3px 20px #399700, inset 0px -0.3px 20px #00b9e7, 0px -0.03px 24px #399700, 0px -0.3px 1px #00b9e7;
 }
 body.page-enrollment .mobile-menu { display: none;
     position: fixed;
@@ -1471,7 +1471,7 @@ body.page-faq .hamburger span {
     border-radius: 2px;
     transition: all .3s;
     border-color: #00b9e7;
-    box-shadow: inset 0px -0.3px 20px #00b9e7, inset 0px -0.3px 20px #00b9e7, 0px -0.03px 24px #00b9e7, 0px -0.3px 1px #00b9e7;
+    box-shadow: inset 0px -0.3px 20px #399700, inset 0px -0.3px 20px #00b9e7, 0px -0.03px 24px #399700, 0px -0.3px 1px #00b9e7;
 }
 body.page-faq .mobile-menu { display: none; position: fixed; inset: 72px 0 0 0;
     background: var(--cream); z-index: 99; padding: 2rem;
@@ -1738,7 +1738,7 @@ body.page-privacy .hamburger span {
     border-radius: 2px;
     transition: all .3s;
     border-color: #00b9e7;
-    box-shadow: inset 0px -0.3px 20px #00b9e7, inset 0px -0.3px 20px #00b9e7, 0px -0.03px 24px #00b9e7, 0px -0.3px 1px #00b9e7;
+    box-shadow: inset 0px -0.3px 20px #399700, inset 0px -0.3px 20px #00b9e7, 0px -0.03px 24px #399700, 0px -0.3px 1px #00b9e7;
 }
 body.page-privacy .mobile-menu { display: none; position: fixed; inset: 72px 0 0 0;
     background: var(--cream); z-index: 99; padding: 2rem;
@@ -2002,7 +2002,7 @@ body.page-shop .hamburger span {
     border-radius: 2px;
     transition: all .3s;
     border-color: #00b9e7;
-    box-shadow: inset 0px -0.3px 20px #00b9e7, inset 0px -0.3px 20px #00b9e7, 0px -0.03px 24px #00b9e7, 0px -0.3px 1px #00b9e7;
+    box-shadow: inset 0px -0.3px 20px #399700, inset 0px -0.3px 20px #00b9e7, 0px -0.03px 24px #399700, 0px -0.3px 1px #00b9e7;
 }
 body.page-shop .mobile-menu { display: none; position: fixed; inset: 72px 0 0 0;
     background: var(--cream); z-index: 99; padding: 2rem;
