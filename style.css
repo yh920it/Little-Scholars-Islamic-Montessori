@@ -8,7 +8,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root { --cream:      #FDF6ED;
     --cream-dark: #F5EBDA;
-    --terra:      #18aa01;
+    --terra:      #399700;
     --terra-lt:   #1cbc03;
     --terra-dk:   #00b9e7;
     --sage:       #7A9E7E;
@@ -105,7 +105,6 @@ body.page-home .fs5 { width:70px; height:70px; background: var(--sage); top:75%;
 body.page-home .hero-inner { position: relative; z-index: 1;
     max-width: 1200px; margin: 0 auto; width: 100%;
     display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
-body.page-home .hero-text {  }
 body.page-home .hero-badge { display: inline-flex; align-items: center; gap: 6px;
     background: var(--yellow); color: white;
     font-family: var(--font-display); font-weight: 700; font-size: .8rem;
@@ -288,9 +287,9 @@ body.page-home .cta-inner h2 { font-family: var(--font-display); font-weight: 80
 body.page-home .cta-inner h2 em { font-style: normal; color: var(--yellow); }
 body.page-home .cta-inner p { font-size: 1.05rem; opacity: .75; margin-bottom: 2rem; line-height: 1.6; }
 body.page-home .btn-light { background: var(--terra); color: white;
-    box-shadow: 0 4px 0 rgba(0,0,0,.2);
+    box-shadow: 0 4px 0 #005690;
     font-size: 1.1rem; padding: .9rem 2.5rem; }
-body.page-home .btn-light:hover { transform: translateY(-2px); box-shadow: 0 6px 0 rgba(0,0,0,.25); }
+body.page-home .btn-light:hover { transform: translateY(-2px); box-shadow: 0 7px 0 rgba(0,0,0,.35); }
 body.page-home footer { background: #005690; color: rgba(255,255,255,.65);
     padding: 3.5rem 2rem 2rem;
     font-size: .875rem; }
@@ -1893,7 +1892,6 @@ body.page-privacy .toc-card a:hover { color: var(--terra); }
 body.page-privacy .policy-stack { display: grid; gap: 1.15rem; }
 body.page-privacy .policy-card { background: #fff; border-radius: 24px; padding: 1.55rem; box-shadow: 0 5px 0 rgba(61,43,31,.07); border-left: 6px solid var(--terra); }
 body.page-privacy .policy-card:nth-child(2n) { border-left-color: var(--blue); }
-body.page-privacy .policy-card:nth-child(3n) { border-left-color: var(--yellow); }
 body.page-privacy .policy-card h3 { font-size: 1.35rem; margin-bottom: .6rem; }
 body.page-privacy .policy-card p, body.page-privacy .policy-card li { color: #6B5040; line-height: 1.75; }
 body.page-privacy .policy-card ul { padding-left: 1.2rem; margin-top: .6rem; }
