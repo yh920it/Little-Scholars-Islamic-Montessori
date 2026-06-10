@@ -112,6 +112,38 @@
     <span>© 2026 Little Scholars Islamic Montessori LLC. All rights reserved.</span>
   </div>
 </footer>
+<script>
+  const ham = document.getElementById('hamburger');
+  const menu = document.getElementById('mobile-menu');
 
+  if (ham && menu) {
+    ham.addEventListener('click', () => {
+      menu.classList.toggle('open');
+      const spans = ham.querySelectorAll('span');
+
+      if (menu.classList.contains('open')) {
+        spans[0].style.transform = 'translateY(7.5px) rotate(45deg)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'translateY(-7.5px) rotate(-45deg)';
+      } else {
+        spans.forEach(s => {
+          s.style.transform = '';
+          s.style.opacity = '';
+        });
+      }
+    });
+
+    menu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        menu.classList.remove('open');
+        const spans = ham.querySelectorAll('span');
+        spans.forEach(s => {
+          s.style.transform = '';
+          s.style.opacity = '';
+        });
+      });
+    });
+  }
+</script>
 </body>
 </html>
