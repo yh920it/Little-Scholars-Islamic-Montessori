@@ -123,7 +123,14 @@
       </p>
     </div>
 
-    <form class="form-shell reveal" action="enrollment-submitted.html" method="GET">
+<form
+  class="form-shell reveal"
+  id="enrollmentForm"
+  action="https://formspree.io/f/xdavdqqg"
+  method="POST"
+>
+  <input type="hidden" name="subject" value="New Enrollment Inquiry - Little Scholars Islamic Montessori">
+  <input type="hidden" name="formName" value="Enrollment Inquiry Form">
 
       <div class="form-section">
         <h3>Child Information</h3>
@@ -143,8 +150,8 @@
             <label for="childGender">Child’s Gender</label>
             <select id="childGender" name="childGender" required>
               <option value="">Select one</option>
-              <option value="Girl">Girl</option>
               <option value="Boy">Boy</option>
+              <option value="Girl">Girl</option>
             </select>
           </div>
 
@@ -186,12 +193,12 @@
 
           <div class="form-group">
             <label for="phone">Primary Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="(000) 000-0000" required>
+            <input type="tel" id="phone" name="phone" placeholder="(000) 000-0000" autocomplete="tel" required>
           </div>
 
           <div class="form-group">
             <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" autocomplete="email" required>
           </div>
         </div>
       </div>
@@ -337,6 +344,44 @@
   }, { threshold: 0.12 });
 
   reveals.forEach(el => observer.observe(el));
+
+    const enrollmentForm = document.getElementById("enrollmentForm");
+
+  if (enrollmentForm) {
+    enrollmentForm.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const submitButton = enrollmentForm.querySelector('button[type="submit"]');
+      const originalButtonText = submitButton.textContent;
+
+      submitButton.disabled = true;
+      submitButton.textContent = "Submitting...";
+
+      try {
+        const formData = new FormData(enrollmentForm);
+
+        const response = await fetch(enrollmentForm.action, {
+          method: "POST",
+          body: formData,
+          headers: {
+            "Accept": "application/json"
+          }
+        });
+
+        if (response.ok) {
+          window.location.href = "enrollment-submitted.html";
+        } else {
+          alert("Something went wrong. Please check the form and try again.");
+          submitButton.disabled = false;
+          submitButton.textContent = originalButtonText;
+        }
+      } catch (error) {
+        alert("There was a connection issue. Please try again.");
+        submitButton.disabled = false;
+        submitButton.textContent = originalButtonText;
+      }
+    });
+  }
 </script>
 
 </body>
