@@ -7,20 +7,149 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+<link rel="icon" type="image/png" href="LSMicon.png">
 <link rel="stylesheet" href="style.css">
+<style>
+.coming-soon-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  background: rgba(253, 246, 237, 0.42);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.coming-soon-overlay.open {
+  display: flex;
+}
+
+.coming-soon-alert {
+  position: relative;
+  width: min(430px, 100%);
+  text-align: center;
+  border-radius: 32px;
+  padding: 2.4rem 1.8rem 2.2rem;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.72), rgba(255,255,255,.28)),
+    linear-gradient(180deg, rgba(214,240,251,.72), rgba(253,246,237,.62));
+  border: 2px solid rgba(255,255,255,.75);
+  box-shadow:
+    0 0 18px rgba(43,159,212,.45),
+    0 0 36px rgba(28,188,3,.32),
+    0 18px 45px rgba(61,43,31,.18),
+    inset 0 1px 0 rgba(255,255,255,.9),
+    inset 0 -1px 0 rgba(255,255,255,.35);
+  backdrop-filter: blur(18px) saturate(150%);
+  -webkit-backdrop-filter: blur(18px) saturate(150%);
+  animation: comingSoonBeat 1.25s ease-in-out infinite;
+}
+
+.coming-soon-alert::before {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border-radius: 24px;
+  border: 2px dashed rgba(43,159,212,.45);
+  pointer-events: none;
+}
+
+.coming-soon-icon {
+  width: 88px;
+  height: 88px;
+  margin: 0 auto .75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.1rem;
+  background: rgba(255,255,255,.42);
+  box-shadow:
+    0 0 18px rgba(43,159,212,.5),
+    inset 0 1px 0 rgba(255,255,255,.9);
+}
+
+.coming-soon-alert h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 7vw, 3.3rem);
+  line-height: 1;
+  color: var(--terra);
+  text-shadow:
+    0 0 10px rgba(28,188,3,.25),
+    2px 2px 0 rgba(43,159,212,.18);
+  margin-bottom: .35rem;
+}
+
+.coming-soon-alert p {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: var(--blue);
+}
+
+.coming-soon-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: rgba(255,255,255,.68);
+  color: var(--brown);
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  font-weight: 800;
+  line-height: 1;
+  box-shadow:
+    0 3px 0 rgba(61,43,31,.1),
+    inset 0 1px 0 rgba(255,255,255,.8);
+}
+
+.coming-soon-close:hover {
+  transform: translateY(-1px);
+  background: rgba(255,255,255,.9);
+}
+
+@keyframes comingSoonBeat {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow:
+      0 0 18px rgba(43,159,212,.45),
+      0 0 36px rgba(28,188,3,.32),
+      0 18px 45px rgba(61,43,31,.18),
+      inset 0 1px 0 rgba(255,255,255,.9),
+      inset 0 -1px 0 rgba(255,255,255,.35);
+  }
+
+  50% {
+    transform: scale(1.045);
+    box-shadow:
+      0 0 26px rgba(43,159,212,.7),
+      0 0 54px rgba(28,188,3,.5),
+      0 22px 55px rgba(61,43,31,.22),
+      inset 0 1px 0 rgba(255,255,255,1),
+      inset 0 -1px 0 rgba(255,255,255,.45);
+  }
+}
+</style>
 </head>
 <body class="page-shop">
 
 <nav>
   <div class="nav-inner">
-    <a href="littlescholars.html" class="logo" aria-label="Little Scholars Islamic Montessori Home">
+    <a href="index.html" class="logo" aria-label="Little Scholars Islamic Montessori Home">
       <img src="LSMlogo.png" alt="Little Scholars Islamic Montessori Logo" style="width:206px; height:88.7px;">
     </a>
     <ul class="nav-links">
-      <li><a href="littlescholars.html">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="aboutus.html">About Us</a></li>
       <li><a href="programs.html">Programs</a></li>
-      <li><a href="littlescholars.html#daily-life">Daily Life</a></li>
+      <li><a href="index.html#daily-life">Daily Life</a></li>
       <li><a href="shop.html" class="active">Shop</a></li>
       <li><a href="enrollment.html" class="nav-cta">Enroll Now</a></li>
     </ul>
@@ -31,10 +160,10 @@
 </nav>
 
 <nav class="mobile-menu" id="mobile-menu">
-  <a href="littlescholars.html">Home</a>
+  <a href="index.html">Home</a>
   <a href="aboutus.html">About Us</a>
   <a href="programs.html">Programs</a>
-  <a href="littlescholars.html#daily-life">Daily Life</a>
+  <a href="index.html#daily-life">Daily Life</a>
   <a href="shop.html" class="active">Shop</a>
   <a href="enrollment.html" style="max-width:155px;border-radius:150px;text-align:center;" class="nav-cta">Enroll Now</a>
 </nav>
@@ -49,7 +178,7 @@
     <div class="hero-text reveal">
       <h1>Shop Learning Tools for<br><span class="accent">Little Muslim Scholars</span></h1>
       <p class="hero-sub">
-        Browse hands-on Montessori-inspired learning materials, Islamic activity packs, printables, and family resources created to support joyful learning at home.
+        Browse hands-on Montessori-inspired learning materials, Islamic activity packs, printables, and family resources made to support joyful learning at home.
       </p>
     </div>
   </div>
@@ -111,10 +240,10 @@
         <div class="product-art art-yellow">🌙</div>
         <div class="product-body">
           <div class="product-topline">
-            <h3>Ramadan Good Deeds Chart</h3>
+            <h3>Good Deeds Chart</h3>
             <div class="price">$5</div>
           </div>
-          <p class="product-desc">A cheerful family-friendly chart to encourage small acts of kindness, dhikr, helping, and gratitude during Ramadan.</p>
+          <p class="product-desc">A cheerful family-friendly chart to encourage small acts of kindness, dhikr, helping, and gratitude.</p>
           <div class="product-meta">
             <span class="tag">Instant PDF</span>
             <span class="tag">Seasonal</span>
@@ -196,10 +325,10 @@
     </div>
     <div>
       <h4>Quick Links</h4>
-      <a href="littlescholars.html">Home</a>
+      <a href="index.html">Home</a>
       <a href="aboutus.html">About Us</a>
       <a href="programs.html">Programs</a>
-      <a href="littlescholars.html#daily-life">Daily Life</a>
+      <a href="index.html#daily-life">Daily Life</a>
       <a href="shop.html">Shop</a>
     </div>
     <div>
@@ -216,9 +345,19 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2026 Little Scholars Islamic Montessori LLC. All rights reserved.</span>
+    <span>© 2026 Little Scholars Educational Services LLC. All rights reserved.</span>
   </div>
 </footer>
+
+<!-- Coming Soon Popup -->
+<div class="coming-soon-overlay" id="comingSoonOverlay">
+  <div class="coming-soon-alert">
+    <button class="coming-soon-close" id="comingSoonClose" aria-label="Close popup">×</button>
+    <div class="coming-soon-icon">✨</div>
+    <h2>Coming Soon</h2>
+    <p>InSha Allah</p>
+  </div>
+</div>
 
 <script>
   const ham = document.getElementById('hamburger');
@@ -254,6 +393,31 @@
     });
   }, { threshold: 0.12 });
   reveals.forEach(el => observer.observe(el));
+  const comingSoonOverlay = document.getElementById('comingSoonOverlay');
+  const comingSoonClose = document.getElementById('comingSoonClose');
+
+  document.querySelectorAll('.product-actions a, .bundle-copy a.btn-primary').forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+      comingSoonOverlay.classList.add('open');
+    });
+  });
+
+  comingSoonClose.addEventListener('click', () => {
+    comingSoonOverlay.classList.remove('open');
+  });
+
+  comingSoonOverlay.addEventListener('click', (e) => {
+    if (e.target === comingSoonOverlay) {
+      comingSoonOverlay.classList.remove('open');
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      comingSoonOverlay.classList.remove('open');
+    }
+  });
 </script>
 </body>
 </html>

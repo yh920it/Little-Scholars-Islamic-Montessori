@@ -1431,7 +1431,7 @@ body.page-enrollment .reveal.visible { opacity: 1;
         transition: none !important; }
 }
 
-/* ===== Enrollment Submitted Hero Upgrade ===== */
+/* ===== Enrollment Submitted ===== */
 
 body.page-enrollment-submitted .hero {
   min-height: calc(100vh - 100px);
