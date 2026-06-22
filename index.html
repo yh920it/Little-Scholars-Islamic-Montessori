@@ -337,10 +337,28 @@
       <div class="section-label">💛 Families Appreciate Us</div>
       <h2 class="section-title">Words from Our Community</h2>
     </div>
+
     <div class="testi-grid">
+
       <div class="testi-card reveal">
         <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"Choosing the right school for our children is a hard choice, but The Little Scholars makes it easy and guilt free! Ms. Fatin and her amazing team treat every child like family. They provide the perfect blend of play and learning in a clean and safe space."</p>
+
+        <div class="testi-preview">
+          <p class="testi-text">
+            "Choosing the right school for our children is a hard choice, but The Little Scholars makes it easy and guilt free! Ms. Fatin and her amazing team treat every child like family. They provide the perfect blend of play and learning in a clean and safe space."
+          </p>
+        </div>
+
+        <button
+          class="testi-read-more"
+          type="button"
+          data-author="Farah"
+          data-info="Mother of a Little Scholar, age 2"
+          data-testimonial="Choosing the right school for our children is a hard choice, but The Little Scholars makes it easy and guilt free! Ms. Fatin and her amazing team treat every child like family. Being an Islamic Montessori school, Our 3 children, over the span of ten years, have grown much confidence, socialization, Arabic and English language, Quraan memorization and Islamic knowledge. They provide the perfect blend of play and learning in a clean and safe space. The Little Scholars has become family, If you are looking for a nurturing second home for your children, where they will thrive in all areas and feel safe, look no further!"
+        >
+          Read full testimonial →
+        </button>
+
         <div class="testi-author">
           <div class="avatar av-terra">FA</div>
           <div>
@@ -349,31 +367,103 @@
           </div>
         </div>
       </div>
+
       <div class="testi-card reveal">
         <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"Being an Islamic Montessori school, Our 3 children, over the span of ten years, have grown much confidence, socialization, Arabic and English language, Quraan memorization and Islamic knowledge."</p>
+
+        <div class="testi-preview">
+          <p class="testi-text">
+            "Little Scholars Islamic Montessori has been an amazing early learning experience for our daughter. It is a warm family like environment and we could not be happier with the care and education our daughter is receiving."
+          </p>
+        </div>
+
+        <button
+          class="testi-read-more"
+          type="button"
+          data-author="Reda"
+          data-info="Mother of a Little Scholar, age 4"
+          data-testimonial="Little Scholars Islamic Montessori has been an amazing early learning experience for our daughter. It is a warm family like environment and we could not be happier with the care and education our daughter is receiving. Our daughter has blossomed since starting the program. When she draws photos of our family Sister Fatin and Sister Hafsa are always in the photo. Her love and excitement to return within days of initial enrollment always put our hearts at ease and made us confident we’d made the right choice. They will always be like family to us and we are so grateful for the positive influence they’ve had on our daughters tarbiyah. We cannot recommend Little Scholars enough."
+        >
+          Read full testimonial →
+        </button>
+
         <div class="testi-author">
-          <div class="avatar av-sage">PM</div>
+          <div class="avatar av-sage">RA</div>
           <div>
-            <div class="author-name">Parent</div>
-            <div class="author-info">Parent of a Little Scholar, age 5</div>
+            <div class="author-name">Reda</div>
+            <div class="author-info">Mother of a Little Scholar, age 4</div>
           </div>
         </div>
       </div>
+
       <div class="testi-card reveal">
         <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"The Little Scholars has become family, If you are looking for a nurturing second home for your children, where they will thrive in all areas and feel safe, look no further!"</p>
+
+        <div class="testi-preview">
+          <p class="testi-text">
+            "Alhamdulilah, our experience with Little Scholars Islamic Montessori has been nothing short of wonderful. The teachers create such a warm, nurturing environment where children learn both academically and spiritually."
+          </p>
+        </div>
+
+        <button
+          class="testi-read-more"
+          type="button"
+          data-author="Suleiman"
+          data-info="Father of Little Scholars, ages 4 & 5"
+          data-testimonial="Alhamdulilah, our experience with Little Scholars Islamic Montessori has been nothing short of wonderful. The teachers create such a warm, nurturing environment where children learn both academically and spiritually. We love how they blend Montessori principles with strong Islamic values. Our kids come home excited to share new duas, surahs, and hands-on lessons. It’s clear the staff truly care about each student as an individual. Little Scholars has been an amazing foundation for our children’s love of learning and faith."
+        >
+          Read full testimonial →
+        </button>
+
         <div class="testi-author">
-          <div class="avatar av-blue">PM</div>
+          <div class="avatar av-blue">SM</div>
           <div>
-            <div class="author-name">Parent</div>
-            <div class="author-info">Parent of a Little Scholar, age 3</div>
+            <div class="author-name">Suleiman</div>
+            <div class="author-info">Father of Little Scholars, ages 3 & 4</div>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
+
+<div
+  class="testi-modal"
+  id="testiModal"
+  aria-hidden="true"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="testiModalTitle"
+>
+  <div class="testi-modal-backdrop" data-close-testimonial></div>
+
+  <div class="testi-modal-card" role="document">
+    <button
+      class="testi-modal-close"
+      type="button"
+      aria-label="Close testimonial"
+      data-close-testimonial
+    >
+      ×
+    </button>
+
+    <div class="testi-modal-stars">★★★★★</div>
+
+    <h3 id="testiModalTitle">Family Testimonial</h3>
+
+    <p class="testi-modal-text" id="testiModalText"></p>
+
+    <div class="testi-modal-author">
+      <div class="testi-modal-avatar" id="testiModalAvatar">LS</div>
+
+      <div>
+        <div class="testi-modal-name" id="testiModalAuthor"></div>
+        <div class="testi-modal-info" id="testiModalInfo"></div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- CTA BANNER -->
 <section class="cta-banner" id="admissions">
@@ -487,6 +577,82 @@
 
   window.addEventListener('scroll', setHomePageActiveLink);
   window.addEventListener('load', setHomePageActiveLink);
+
+  // Testimonial modal
+  const testimonialModal = document.getElementById("testiModal");
+  const testimonialButtons = document.querySelectorAll(".testi-read-more");
+  const testimonialCloseButtons = document.querySelectorAll(
+    "[data-close-testimonial]"
+  );
+
+  const testimonialModalText = document.getElementById("testiModalText");
+  const testimonialModalAuthor = document.getElementById("testiModalAuthor");
+  const testimonialModalInfo = document.getElementById("testiModalInfo");
+  const testimonialModalAvatar = document.getElementById("testiModalAvatar");
+
+  let lastFocusedTestimonialButton = null;
+
+  function createInitials(name) {
+    if (!name) return "LS";
+
+    const words = name.trim().split(/\s+/);
+
+    return words
+      .slice(0, 2)
+      .map(word => word.charAt(0).toUpperCase())
+      .join("");
+  }
+
+  function openTestimonialModal(button) {
+    if (!testimonialModal) return;
+
+    lastFocusedTestimonialButton = button;
+
+    const testimonial = button.dataset.testimonial || "";
+    const author = button.dataset.author || "Little Scholars Parent";
+    const info = button.dataset.info || "";
+
+    testimonialModalText.textContent = `"${testimonial}"`;
+    testimonialModalAuthor.textContent = author;
+    testimonialModalInfo.textContent = info;
+    testimonialModalAvatar.textContent = createInitials(author);
+
+    testimonialModal.classList.add("open");
+    testimonialModal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("testimonial-modal-open");
+
+    const closeButton = testimonialModal.querySelector(".testi-modal-close");
+    closeButton?.focus();
+  }
+
+  function closeTestimonialModal() {
+    if (!testimonialModal) return;
+
+    testimonialModal.classList.remove("open");
+    testimonialModal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("testimonial-modal-open");
+
+    lastFocusedTestimonialButton?.focus();
+  }
+
+  testimonialButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      openTestimonialModal(button);
+    });
+  });
+
+  testimonialCloseButtons.forEach(button => {
+    button.addEventListener("click", closeTestimonialModal);
+  });
+
+  document.addEventListener("keydown", event => {
+    if (
+      event.key === "Escape" &&
+      testimonialModal?.classList.contains("open")
+    ) {
+      closeTestimonialModal();
+    }
+  });
 </script>
 </body>
 </html>
