@@ -72,6 +72,7 @@ body.page-home .nav-links a:hover, body.page-home .nav-links a.active {
   transform: translateY(-2px);
 }
 body.page-home #daily-life { scroll-margin-top: 90px; }
+body.page-home #testimonials { scroll-margin-top: 90px; }
 body.page-home .nav-cta { background: var(--terra) !important; color: #fff !important;
     box-shadow: 0 3px 0 var(--terra-dk);
     transition: transform .15s, box-shadow .15s !important; }
