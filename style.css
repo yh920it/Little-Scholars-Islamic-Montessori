@@ -255,7 +255,7 @@ body.page-home .time-clock { font-family: var(--font-display); font-size: .75rem
 body.page-home .time-label { font-family: var(--font-display); font-weight: 700; font-size: 1rem;
     color: var(--brown); margin-bottom: .3rem; }
 body.page-home .time-desc { font-size: .82rem; color: #8A6A55; line-height: 1.45; }
-body.page-home .testimonials { padding: 5rem 2rem; background: var(--cream); }
+body.page-home .testimonials { padding: 4rem 2rem; background: var(--cream); }
 body.page-home .testimonials-inner { max-width: 1100px; margin: 0 auto; }
 body.page-home .testimonials-header { text-align: center; margin-bottom: 3rem; }
 /* ===== Testimonial previews and modal ===== */
